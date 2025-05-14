@@ -47,23 +47,42 @@
     /* hero */
 
     .hero{
+        padding: 0%;
         padding-inline: 22px;
         gap: 5px;
         flex-direction: column-reverse;
-        height: 100dvh;
+        height: 50dvh;
+        background-image: url(img/EM.jpg);
+        background-position: center;
+        background-size: cover;
+        color: #fff;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .hero::before{
+        content: '';
+        position: absolute;
+        background: #0a0a0a88;
+        inset: 0;
     }
 
     .hero-img{
         width: 100%;
+        padding: 12px;
         height: 400px;
         border-radius: 0%;
+        display: none;
     }
 
     .hero-cont{
-        display: flex;
         width: 100%;
+        display: flex;
         align-items: center;
         justify-content: center;
+        padding: 0px;
+        position: relative;
+        margin-top: 200px;
     }
 
     .hero-cont p{
@@ -76,13 +95,20 @@
     }
 
     .hero-social{
+        width: 100%;
+        position: relative;
         display: flex;
         flex-direction: row;
-        width: 100%;
         align-items: center;
         justify-content: center;
         margin-bottom: 50px;
+        gap: 10px;
     }
+
+    .xemh{
+        padding: 0%;
+    }
+
 
     /* about */
     .about-top{
@@ -136,6 +162,7 @@
     /* .portifolio */
     .portifolio{
         padding: 22px;
+        position: relative;
     }
 
 
@@ -150,6 +177,18 @@
 
     .slide .slide-cont{
         padding-inline: 22px;
+    }
+
+    #con{
+        width: 60%;
+    }
+
+    #con .fa-angle-left, #con .fa-angle-right{
+        width: 20px;
+        background: blueviolet;
+        padding: 12px;
+        color: #fff;
+        border-radius: 5px;
     }
 
     /* .me */
